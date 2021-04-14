@@ -116,18 +116,18 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Api Test</h1>
 <p class='attribute'><strong>测试人员 : </strong> 最棒QA</p>
-<p class='attribute'><strong>开始时间 : </strong> 2021-04-13 16:03:18</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:02.277491</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 1，错误 1，通过率= 50.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2021-04-14 11:08:00</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:02.585683</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 2，通过 2，通过率= 100.00%</p>
 
 <p class='description'>测试描述</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
 <a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -148,36 +148,27 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='errorClass warning'>
-    <td>unittest.loader._FailedTest</td>
+<tr class='passClass warning'>
+    <td>testcase.test_login.Test_login</td>
+    <td class="text-center">1</td>
     <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center">1</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login</div></td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">  -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in">
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
     <pre>
     
-ft1_1: ImportError: Failed to import test module: testcase.test_login
-Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\Administrator\PycharmProjects\untitled10\venv\testcase\test_login.py", line 4, in &lt;module&gt;
-    from config import *
-ModuleNotFoundError: No module named 'config'
-
+pt1_1: {'body': {'loginTime': 1618369686693, 'isFirstLogin': 'N', 'isManager': 'Y', 'shopEntityId': '1EG05EPI0TGE0L0AB2M102UCLN001DKL', 'shopName': '济南测试529机构', 'shopId': '1DC0HS8P40EULK0AB2M103PJUU001EHR', 'targetURL': None, 'userId': '529test', 'account': '529test', 'token': 'misUser1F375JB0RCPQS10AB2M101GOO30012EO', 'shopEntityName': '529测试使用'}, 'message': '登录成功', 'status': 'OK', 'errorCode': -1}
 
 
     </pre>
@@ -186,7 +177,7 @@ ModuleNotFoundError: No module named 'config'
 </tr>
 
 <tr class='passClass warning'>
-    <td>testcase.test_slist.SZXP_liebiao</td>
+    <td>testcase.test_slist1.SZXP_liebiao</td>
     <td class="text-center">1</td>
     <td class="text-center">1</td>
     <td class="text-center">0</td>
@@ -205,7 +196,7 @@ ModuleNotFoundError: No module named 'config'
     <div id='div_pt2_1' class="collapse in">
     <pre>
     
-pt2_1: 800A806046E620210408165503883
+pt2_1: BBBBCD4BBB3320210413200216980
 
 
     </pre>
@@ -216,10 +207,10 @@ pt2_1: 800A806046E620210408165503883
 <tr id='total_row' class="text-center active">
     <td>总计</td>
     <td>2</td>
-    <td>1</td>
+    <td>2</td>
     <td>0</td>
-    <td>1</td>
-    <td>通过率：50.00%</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
 </tr>
 </table>
 
